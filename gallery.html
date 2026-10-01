@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — M/S Fahim Traders</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="css/vendor/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="M/S Fahim Traders logo" class="brand-logo">
+      <span class="brand-name">M/S FAHIM <span>TRADERS</span></span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+        <li><a href="gallery.html" class="active" data-i18n="nav_gallery">Gallery</a></li>
+        <li><a href="about.html" data-i18n="nav_about">About</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-toggle">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="bn">বাং</button>
+      </div>
+      <a href="contact.html" class="btn ghost" data-i18n="nav_order">Get a Quote</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
+
+<section style="padding-top:56px;">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="tag" data-i18n="gallery_eyebrow">Gallery</p>
+      <h1 data-i18n="gallery_title">Our work, by category</h1>
+      <p data-i18n="gallery_lead">This page is reserved for real photos and short videos of completed work. Placeholders below show where each category will sit.</p>
+    </div>
+
+    <div class="gallery-filter">
+      <button class="active" data-filter="all" data-i18n="gallery_filter_all">All</button>
+      <button data-filter="tags" data-i18n="svc_hangtag_t">Hang Tags</button>
+      <button data-filter="labels" data-i18n="svc_woven_t">Woven Labels</button>
+      <button data-filter="print" data-i18n="svc_tshirt_t">T-Shirt Printing</button>
+      <button data-filter="packaging" data-i18n="svc_box_t">Packaging Boxes</button>
+      <button data-filter="banners" data-i18n="svc_banner_t">Flex Banners</button>
+    </div>
+
+    <!--
+      GALLERY ITEMS — to add real media later:
+      1. Drop files into /assets/gallery/ (e.g. hangtag-01.jpg, tshirt-01.mp4)
+      2. Replace the inner ".placeholder-media" div in the matching card with:
+           <img src="assets/gallery/hangtag-01.jpg" alt="Hang tag sample">
+         or for video:
+           <video src="assets/gallery/tshirt-01.mp4" controls></video>
+      3. Keep the data-category attribute so the filter buttons still work.
+    -->
+    <div class="grid cols-4">
+      <div class="card" data-category="tags">
+        <div class="placeholder-media">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10L12 2H4v8l8 14 8-14z"/><circle cx="7" cy="7" r="1.4" fill="currentColor"/></svg>
+          <span data-i18n="svc_media_soon">Photos / video coming soon</span>
+        </div>
+      </div>
+      <div class="card" data-category="tags">
+        <div class="placeholder-media">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10L12 2H4v8l8 14 8-14z"/><circle cx="7" cy="7" r="1.4" fill="currentColor"/></svg>
+          <span data-i18n="svc_media_soon">Photos / video coming soon</span>
+        </div>
+      </div>
+      <div class="card" data-category="labels">
+        <div class="placeholder-media">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M9 14h6"/></svg>
+          <span data-i18n="svc_media_soon">Photos / video coming soon</span>
+        </div>
+      </div>
+      <div class="card" data-category="labels">
+        <div class="placeholder-media">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M9 14h6"/></svg>
+          <span data-i18n="svc_media_soon">Photos / video coming soon</span>
+        </div>
+      </div>
+      <div class="card" data-category="print">
+        <div class="placeholder-media">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3h8l1 5-5 4-5-4z"/><path d="M9 12v9h6v-9"/></svg>
+          <span data-i18n="svc_media_soon">Photos / video coming soon</span>
+        </div>
+      </div>
+      <div class="card" data-category="print">
+        <div class="placeholder-media">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3h8l1 5-5 4-5-4z"/><path d="M9 12v9h6v-9"/></svg>
+          <span data-i18n="svc_media_soon">Photos / video coming soon</span>
+        </div>
+      </div>
+      <div class="card" data-category="packaging">
+        <div class="placeholder-media">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>
+          <span data-i18n="svc_media_soon">Photos / video coming soon</span>
+        </div>
+      </div>
+      <div class="card" data-category="banners">
+        <div class="placeholder-media">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="1"/><path d="M6 6v-2M18 6v-2M6 18v2M18 18v2"/></svg>
+          <span data-i18n="svc_media_soon">Photos / video coming soon</span>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:26px;font-size:.85rem;color:var(--charcoal-soft);" data-i18n="gallery_upload_note">Add images to /assets/gallery and swap each placeholder block for an &lt;img&gt; or &lt;video&gt; tag — see the comment in gallery.html.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>M/S FAHIM TRADERS</h4>
+        <p data-i18n="footer_tagline">Complete printing & garments accessories solutions.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer_pages_t">Pages</h4>
+        <ul>
+          <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+          <li><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li>
+          <li><a href="about.html" data-i18n="nav_about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer_contact_t">Contact</h4>
+        <ul>
+          <li>+88 01612-969127</li>
+          <li>+88 01620-692207</li>
+          <li>msfahimtraders2026@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>&copy; 2026 M/S Fahim Traders. <span data-i18n="footer_rights">All rights reserved.</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/vendor/bootstrap.bundle.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
